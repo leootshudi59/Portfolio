@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Source+Code+Pro:wght@400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#mobile-nav {
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar {
+    transition: all 0.6s ease;
+}
+
+.skill-bar {
+    background-color: #CB9E50;
+}
+
+@media (min-width: 768px) {
+    header {
+        background: url('../public/media/ethereum_banner.jpeg') no-repeat center;
+        min-height: 565px;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
