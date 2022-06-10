@@ -131,23 +131,23 @@
                 </div>
             </div>
 
-            <div class="md:max-w-7xl mx-s md:mx-auto md:pt-xxl">
+            <div class="md:max-w-7xl mx-auto px-xs md:pt-xxl">
                 <div class="pt-m pb-xs">I am</div>
                 <div>
                     <h1 class="text-h1 font-semibold py-xs">Léo OTSHUDI</h1>
-                    <h2 class="text-h3mobile md:text-h3">Junior Web3 developer</h2>
+                    <h2 class="text-h3mobile md:text-h3">Junior blockchain developer</h2>
                 </div>
             </div>
         </header>
 
         <div class="md:hidden">
-            <img class="max-w-full py-l" src="./public/media/ethereum_banner_cropped.png" alt="Ethereum banner ">
+            <img class="max-w-full pt-m pb-l" src="./public/media/ethereum_banner_cropped.png" alt="Ethereum banner ">
         </div>
         
         <main class="text-white max-w-max md:max-w-7xl mx-xs md:mx-auto">
             <section id="about">
-                <div class="md:max-w-82/100 mx-auto mb-l md:mb-xl">
-                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> About me <span class="text-primary">~</span></h2>
+                <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xl">
+                    <h2 class="text-h2mobile md:text-h2 font-bold text-center mb-s md:mt-s"><span class="text-primary">~</span> About me <span class="text-primary">~</span></h2>
                     <div class="flex flex-col md:flex-row">
                         <div class="items-center w-88 md:w-4/10margin mx-auto md:mr-s mb-s md:mb-0">
                             <img class="rounded-md md:rounded-lg"
@@ -164,7 +164,7 @@
             </section>
 
             <section id="experience">
-                <div class="md:max-w-82/100 mx-auto mb-l md:mb-xl">
+                <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xxl">
                     <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Work experience <span class="text-primary">~</span></h2>
                     <div class="flex flex-col md:flex-row items-center justify-center mx-auto">
                         <div class="flex flex-col md:flex-row w-full">
@@ -196,7 +196,7 @@
             </section>
 
             <section id="education">
-                <div class="md:max-w-82/100 mx-auto mb-l md:mb-xl">
+                <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xxl">
                     <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Education <span class="text-primary">~</span></h2>
                     <div class="relative wrap overflow-hidden h-full">
                         <div class="timeline absolute border border-primary left-6 md:left-1/2 h-full"></div>
@@ -245,7 +245,7 @@
             </section>
 
             <section id="skills">
-                <div class="md:max-w-82/100 mx-auto mb-l md:mb-xl">
+                <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xxl">
                     <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Skills <span class="text-primary">~</span></h2>
                     <div class="flex flex-col rounded-md md:rounded-lg bg-white text-black mb-s py-xs">
                         <h3 class="text-h3mobile md:text-h3 text-center mb-xs">Web3 techs</h3>
@@ -381,10 +381,10 @@
             </section>
 
             <section id="projects">
-                <div class="md:max-w-82/100 mx-auto mb-l md:mb-xl">
+                <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xxl">
                     <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Personnal projects <span class="text-primary">~</span></h2>
                     <div class="flex flex-col md:flex-row">
-                        <div class="flex flex-col md:flex-row items-center justify-between">
+                        <div class="flex flex-col md:flex-row items-center md:items-stretch justify-between">
                             <div class="rounded-lg overflow-hidden bg-secondary shadow-xl max-w-sm md:mr-s mb-s md:mb-m">
                                 <img class="object-cover min-w-full h-56" src="./public/media/token_logo.png" alt="Snake Game">
                                 <div class="px-6 py-4">
@@ -396,7 +396,7 @@
                                         Developed my own ERC-20 token smart contract, with unit testing, and depolyment on Ethereum testnet using Infura.
                                     </p>
                                     <p class="py-2">
-                                        Developed my own ERC-20 token smart contract, with unit testing, and depolyment on Ethereum testnet using Infura.
+                                        Developed my own ERC-20 token smart contract, with unit testing, and deployment on Ethereum testnet using Infura.
                                     </p>
                                 </div>
                                 <div class="px-6 py-xs">
@@ -432,7 +432,7 @@
             </section>
 
             <section id="contact">
-                <div class="md:max-w-82/100 mx-auto mb-m">
+                <div class="reveal md:max-w-82/100 mx-auto mb-m">
                     <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Contact me <span class="text-primary">~</span></h2>
                     <div class="flex justify-center mx-auto">
                         <div class="items-center w-m mr-s md:mr-m">
@@ -513,6 +513,37 @@
                 closelabel.classList.toggle("hidden");
             })
         }
+
+
+        /*Scroll reveal
+        const appearRatio = .1;
+        const options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: appearRatio
+        }
+
+        const handleIntersect = function (entries, observer) {
+            entries.forEach(function (entry) {
+                if (entry.intersectionRatio > appearRatio) {
+                    entry.target.classList.add('reveal-visible');
+                    observer.unobserve(entry.target);
+                    console.log('visible')
+                } else {
+                    console.log('invisible')
+                }
+            })
+        }
+
+        const observer = new IntersectionObserver(handleIntersect, options);
+        document.querySelectorAll('.reveal').forEach(function (r) { 
+            console.log(r)
+            observer.observe(r);
+        })
+        //.forEach(function (r) {
+           // observer.observe(r);
+        // })
+        */
     </script>
 </body>
 
