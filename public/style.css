@@ -470,6 +470,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-backdrop-sepia:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
+.invisible{
+  visibility: hidden;
+}
+
 .absolute{
   position: absolute;
 }
@@ -535,10 +543,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-xs{
   margin-right: 15px;
-}
-
-.mt-s{
-  margin-top: 30px;
 }
 
 .mb-l{
@@ -705,10 +709,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .flex-row{
   flex-direction: row;
 }
@@ -757,10 +757,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 2px;
 }
 
-.border-transparent{
-  border-color: transparent;
-}
-
 .border-border{
   --tw-border-opacity: 1;
   border-color: rgb(47 47 47 / var(--tw-border-opacity));
@@ -805,10 +801,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   fill: currentColor;
 }
 
-.fill-primary{
-  fill: #CB9E50;
-}
-
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -833,26 +825,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 15px;
 }
 
-.px-s{
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.py-2\.5{
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-l{
-  padding-top: 90px;
-  padding-bottom: 90px;
-}
-
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -861,6 +833,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-4{
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 .px-3{
@@ -883,6 +860,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pb-xs{
   padding-bottom: 15px;
+}
+
+.pb-l{
+  padding-bottom: 90px;
 }
 
 .pr-10{
@@ -1022,6 +1003,17 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-attachment: fixed;
   }
 
+  .reveal {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: 1100ms cubic-bezier(0.5, 0, 0, 1);
+  }
+
   .md\:fixed{
     position: fixed;
   }
@@ -1064,6 +1056,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-bottom: 120px;
   }
 
+  .md\:mt-s{
+    margin-top: 30px;
+  }
+
   .md\:mr-s{
     margin-right: 30px;
   }
@@ -1078,6 +1074,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:mt-5\/20{
     margin-top: calc(25% - 168px);
+  }
+
+  .md\:mb-xxl{
+    margin-bottom: 150px;
   }
 
   .md\:ml-s{
@@ -1140,6 +1140,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: row-reverse;
   }
 
+  .md\:items-stretch{
+    align-items: stretch;
+  }
+
   .md\:rounded-lg{
     border-radius: 0.5rem;
   }
@@ -1169,3 +1173,4 @@ Ensure the default browser behavior of the `hidden` attribute.
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 }
+
