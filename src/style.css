@@ -25,7 +25,7 @@
         background-attachment: fixed;
     }
 
-    .reveal {
+    /*.reveal {
         opacity: 0;
         transform: translateY(-40px);
     }
@@ -33,6 +33,6 @@
         opacity: 1;
         transform: translateY(0);
         transition-duration: 1100ms cubic-bezier(0.5, 0, 0, 1);
-    }
+    }*/
 }
 
