@@ -21,15 +21,19 @@
                 <!-- Desktop navbar -->
                 <div class="navbar relative hidden md:flex max-w-full justify-center h-l mx-auto px-m ">
                     <nav class="flex grow justify-center items-center max-w-full">
-                        <ul class="flex grow inset-x-0 content-center justify-between">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#about">Profile</a></li>
-                            <li><a href="#experience">Work experience</a></li>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#projects">Personnal projects</a></li>
+                        <ul class="flex grow inset-x-0 content-center justify-between mr-s">
+                            <li><a href="#" class="lang" key="home">Home</a></li>
+                            <li><a href="#about" class="lang" key="profile">Profile</a></li>
+                            <li><a href="#experience" class="lang" key="we">Work experience</a></li>
+                            <li><a href="#education" class="lang" key="edu">Education</a></li>
+                            <li><a href="#skills" class="lang" key="skills">Skills</a></li>
+                            <li><a href="#projects" class="lang" key="projects">Personnal projects</a></li>
                             <li><a href="#contact">Contact</a></li>
                         </ul>
+                        <div class="flex justify-center ml-xs">
+                            <button class="translator active rounded-l-md bg-black font-bold items-center ml-xs px-xs" id="en">EN</button>
+                            <button class="translator rounded-r-md bg-black font-bold items-center px-xs" id="fr">FR</button>
+                        </div>
                     </nav>
                 </div>
 
@@ -135,7 +139,7 @@
                 <div class="pt-m pb-xs">I am</div>
                 <div>
                     <h1 class="text-h1 font-semibold py-xs">Léo OTSHUDI</h1>
-                    <h2 class="text-h3mobile md:text-h3">Junior blockchain developer</h2>
+                    <h2 class="lang text-h3mobile md:text-h3" key="myDef">Junior full-stack web3 developer</h2>
                 </div>
             </div>
         </header>
@@ -147,17 +151,20 @@
         <main class="text-white max-w-max md:max-w-7xl mx-xs md:mx-auto">
             <section id="about">
                 <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xl">
-                    <h2 class="text-h2mobile md:text-h2 font-bold text-center mb-s md:mt-s"><span class="text-primary">~</span> About me <span class="text-primary">~</span></h2>
+                    <h2 class="text-h2mobile md:text-h2 font-bold text-center mb-s md:mt-s">
+                        <span class="text-primary">~</span> <span class="lang" key="titleAboutMe">About me</span> <span class="text-primary">~</span>
+                    </h2>
                     <div class="flex flex-col md:flex-row">
                         <div class="items-center w-88 md:w-4/10margin mx-auto md:mr-s mb-s md:mb-0">
                             <img class="rounded-md md:rounded-lg"
                                 src="./public/media/leo_otshudi_portrait.png" alt="My portrait"/>
                         </div>
                         <div class="md:w-6/10margin md:ml-m md:mt-5/20">
-                            <p>My passion for blockchain and DeFi is what has guided my life during my student years.
-                                After my IT studies, I had the opportunity to join two DeFi projects that propelled me
-                                in the heart of web3 ecosystem.</p>
-                            <p>I enjoy learning, discovering, and getting involved in projects I am passionate about.</p>
+                            <p class="lang" key="portrait-1">My passion for web development and blockchain is
+                                what has guided my life during my student years. After my IT studies,
+                                I had the opportunity to join two web3 projects where I got
+                                a first professional experience in full-stack web development.</p><br/>
+                            <p class="lang" key="portrait-2">I enjoy learning, discovering, and getting involved in projects I am passionate about.</p>
                         </div>
                     </div>
                 </div>
@@ -165,30 +172,30 @@
 
             <section id="experience">
                 <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xxl">
-                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Work experience <span class="text-primary">~</span></h2>
+                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> <span class="lang" key="we">Work experience</span> <span class="text-primary">~</span></h2>
                     <div class="flex flex-col md:flex-row items-center justify-center mx-auto">
                         <div class="flex flex-col md:flex-row w-full">
                             <div class="grow border border-border rounded-md md:mr-s mb-xs md:mb-0 p-3">
-                                <h3 class="font-bold">Web3 developer</h3>
+                                <h3 class="lang font-bold" key="exp-1">Web3 developer</h3>
                                 <h4>World Assemble</h4>
-                                <p class="mt-xs">April 2022 - ...</p>
+                                <p class="mt-xs"><span class="lang" key="date-april">April</span> 2022 - <span class="lang" key="date-june">June</span></p>
                             </div>
                             <div class="grow border border-border rounded-md md:mx-s my-xs md:my-0 p-3">
-                                <h3 class="font-bold">Intern Web3 developer</h3>
+                                <h3 class="lang font-bold" key="exp-2">Intern Web3 developer</h3>
                                 <h4>Multi Strategies Capital</h4>
-                                <p class="mt-xs">April 2022 - ...</p>
+                                <p class="mt-xs"><span class="lang" key="date-april">April</span> 2022 - <span class="lang" key="date-june">June</span></p>
                             </div>
                         </div>
                         <div class="flex flex-col md:flex-row w-full">
                             <div class="border border-border rounded-md md:mx-s my-xs md:my-0 p-3">
-                                <h3 class="font-bold">Student association President</h3>
+                                <h3 class="lang font-bold" key="exp-3">Student association President</h3>
                                 <h4>OEIL Limoges</h4>
-                                <p class="mt-xs">April 2021 - April 2022</p>
+                                <p class="mt-xs"><span class="lang" key="date-april">April</span> 2021 - <span class="lang" key="date-april">April</span> 2022</p>
                             </div>
                             <div class="border border-border rounded-md md:ml-s mt-xs md:my-0 p-3">
-                                <h3 class="font-bold">Intern Web developer</h3>
+                                <h3 class="lang font-bold" key="exp-4">Intern Web developer</h3>
                                 <h4>AdVenture05</h4>
-                                <p class="mt-xs">Summer 2019</p>
+                                <p class="mt-xs"><span class="lang" key="date-summer">Summer</span> 2019</p>
                             </div>
                         </div>
                     </div>
@@ -197,7 +204,9 @@
 
             <section id="education">
                 <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xxl">
-                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Education <span class="text-primary">~</span></h2>
+                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s">
+                        <span class="text-primary">~</span> <span class="lang" key="edu">Education</span> <span class="text-primary">~</span>
+                    </h2>
                     <div class="relative wrap overflow-hidden h-full">
                         <div class="timeline absolute border border-primary left-6 md:left-1/2 h-full"></div>
 
@@ -221,7 +230,7 @@
                                 <p class="mx-auto text-white font-semibold text-lg">2</p>
                             </div>
                             <div class="text-black rounded-md bg-white shadow-xl w-timeline-mobile md:w-5/12 px-6 py-4">
-                                <h3 class="text-xl font-bold">Engineering school preparatory course</h3>
+                                <h3 class="lang text-xl font-bold" key="eduEngineer">Engineering school preparatory course</h3>
                                 <address class="mb-xs">ESILV Paris, La Défense (France)</address>
                                 <p class="text-sm font-medium leading-snug tracking-wide text-opacity-100">2017-2020
                                 </p>
@@ -246,9 +255,11 @@
 
             <section id="skills">
                 <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xxl">
-                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Skills <span class="text-primary">~</span></h2>
+                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s">
+                        <span class="text-primary">~</span> <span class="lang" key="skills">Skills</span> <span class="text-primary">~</span>
+                    </h2>
                     <div class="flex flex-col rounded-md md:rounded-lg bg-white text-black mb-s py-xs">
-                        <h3 class="text-h3mobile md:text-h3 text-center mb-xs">Web3 techs</h3>
+                        <h3 class="lang text-h3mobile md:text-h3 text-center mb-xs" key="skills-w3">Web3 techs</h3>
                         <div class="flex flex-col md:flex-row justify-center mx-m my-xs">
                             <div class="flex justify-between mb-xs md:mb-0">
                                 <div class="flex flex-col md:mr-8">
@@ -284,7 +295,7 @@
                     </div>
 
                     <div class="flex flex-col rounded-md md:rounded-lg bg-secondary mb-s py-xs">
-                        <h3 class="text-h3mobile md:text-h3 text-center mb-xs">Web2 techs</h3>
+                        <h3 class="lang text-h3mobile md:text-h3 text-center mb-xs" key="skills-w2">Web2 techs</h3>
                         <div class="flex flex-col md:flex-row justify-center mx-m my-xs">
                             <div class="flex justify-between mb-xs md:mb-0">
                                 <div class="flex flex-col md:mr-8">
@@ -382,20 +393,20 @@
 
             <section id="projects">
                 <div class="reveal md:max-w-82/100 mx-auto mb-l md:mb-xxl">
-                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Personnal projects <span class="text-primary">~</span></h2>
+                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s">
+                        <span class="text-primary">~</span> <span class="lang" key="projects">Personnal projects</span> <span class="text-primary">~</span>
+                    </h2>
                     <div class="flex flex-col md:flex-row">
                         <div class="flex flex-col md:flex-row items-center md:items-stretch justify-between">
                             <div class="rounded-lg overflow-hidden bg-secondary shadow-xl max-w-sm md:mr-s mb-s md:mb-m">
                                 <img class="object-cover min-w-full h-56" src="./public/media/token_logo.png" alt="Snake Game">
                                 <div class="px-6 py-4">
                                     <div>
-                                        <h2 class="font-bold text-xl">Tokenisation project</h2>
+                                        <h2 class="lang font-bold text-xl" key="tokenisation">Tokenisation project</h2>
                                         <address class="mt-2 mb-xs">June 2022</address>
                                     </div>
-                                    <p class="hidden py-2">
-                                        Developed my own ERC-20 token smart contract, with unit testing, and depolyment on Ethereum testnet using Infura.
-                                    </p>
-                                    <p class="py-2">
+
+                                    <p class="lang py-2" key="erc20">
                                         Developed my own ERC-20 token smart contract, with unit testing, and deployment on Ethereum testnet using Infura.
                                     </p>
                                 </div>
@@ -411,14 +422,11 @@
                                 <img class="object-cover min-w-full h-56" src="./public/media/snake.png" alt="Snake Game">
                                 <div class="px-6 py-4">
                                     <div>
-                                        <h2 class="font-bold text-xl">Snake game</h2>
+                                        <h2 class="lang font-bold text-xl" key="snake">Snake game</h2>
                                         <address class="mt-2 mb-xs">October 2021</address>
                                     </div>
-    
-                                    <p class="hidden py-2">
-                                        Le célèbre jeu de snake, développé de manière autodidacte en Rust afin de me familiariser avec ce langage et en découvrir d'autres fonctionnalités que celles vues en cours.
-                                    </p>
-                                    <p class="py-2">
+
+                                    <p class="lang py-2" key="snakeDescr">
                                         The famous Snake game I developed on my own in Rust in order to make my hand into this language and discover its basic functionalities.
                                     </p>
                                 </div>
@@ -433,7 +441,9 @@
 
             <section id="contact">
                 <div class="reveal md:max-w-82/100 mx-auto mb-m">
-                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s"><span class="text-primary">~</span> Contact me <span class="text-primary">~</span></h2>
+                    <h2 class="text-h2mobile md:text-h2 font-bold text-center my-s">
+                        <span class="text-primary">~</span> <span class="lang" key="contact">Contact me</span> <span class="text-primary">~</span>
+                    </h2>
                     <div class="flex justify-center mx-auto">
                         <div class="items-center w-m mr-s md:mr-m">
                             <a href="https://www.linkedin.com/in/leo-otshudi/"><img src="./public/media/linkedin_logo-white.png" alt="LinkedIn logo"/></a>
@@ -451,12 +461,12 @@
 
         <footer class="bg-primary text-white">
             <div class="items-center md:mx-auto py-xs">
-                <h6 class="text-small text-center">© Léo Otshudi, 2022 - All Rights Reserved</h6>
+                <h6 class="text-small text-center">© Léo Otshudi, 2022 - <span class="lang" key="rights">All Rights Reserved</span></h6>
             </div>
         </footer>
     </div>
     
-    <script>
+    <script type="text/javascript">
         window.addEventListener('scroll', function () {
             if(window.scrollY > 40) {
                 document.querySelector('.navbar')
@@ -544,6 +554,83 @@
            // observer.observe(r);
         // })
         */
+    </script>
+    <script type="text/javascript">
+        var arrLang = {
+            'en': {
+                'home': "Home",
+                'profile': "Profile",
+                'we': "Work experience",
+                'edu': "Education",
+                'skills': "Skills",
+                'projects': "Personnal projects",
+                "contact": "Contact me",
+                'myDef': "Junior full-stack web3 developer",
+                'titleAboutMe': "About me",
+                'portrait-1': "My passion for web development and blockchain is what has guided my life during my student years. After my IT studies, I had the opportunity to join two web3 projects where I got a first professional experience in full-stack web development.",
+                'portrait-2': "I enjoy learning, discovering, and getting involved in projects I am passionate about.",
+                'exp-1': "Web3 developer",
+                'exp-2': "Intern Web3 developer",
+                'exp-3': "Student association President",
+                'exp-4': "Intern Web developer",
+                'date-april': "April",
+                'date-june': "June",
+                'date-summer': "Summer",
+                'eduEngineer': "Engineering school preparatory course",
+                'skills-w3': "Web3 techs",
+                'skills-w2': "Web2 techs",
+                'tokenisation': "Tokenisation project",
+                'snake': "Snake game",
+                'erc20': "Developed my own ERC-20 token smart contract, with unit testing, and deployment on Ethereum testnet using Infura.",
+                'snakeDescr': "The famous Snake game I developed on my own in Rust in order to make my hand into this language and discover its basic functionalities.",
+                'rights': "All rights reserved"
+            },
+            'fr': {
+                'home': "Accueil",
+                'profile': "Profil",
+                'we': "Expériences",
+                'edu': "Formation",
+                'skills': "Compétences",
+                'projects': "Projets perso",
+                'contact': "Me contacter",
+                'myDef': "Développeur web3 full-stack junior",
+                'titleAboutMe': "À propos de moi",
+                'portrait-1': "Mes années étudiantes ont été guidées par ma passion pour le développement Web et la blockchain. Après mon DUT informatique, j'ai eu l'opportunité de faire partie de deux projets web3 dans lesquels j'ai pu obtenir une première expérience professionnelle en développement web full-stack.",
+                'portrait-2': "J'aime apprendre, découvrer et être pleinement investi dans les projets qui me passionnent.",
+                'exp-1': "Développeur web3",
+                'exp-2': "Développeur web3 junior",
+                'exp-3': "Président du BDE",
+                'exp-4': "Développeur web stagiaire",
+                'date-april': "Avril",
+                'date-june': "Juin",
+                'date-summer': "Été",
+                'eduEngineer': "Cycle préparatoire d'école d'ingénieurs",
+                'skills-w3': "Technos web3",
+                'skills-w2': "Technos \"web2\"",
+                'tokenisation': "Projet de création de token",
+                'snake': "Jeu de snake",
+                'erc20': "J'ai développé mon propre contrat intelligent de token ERC-20 avec ses tests unitaires, avant de le déployer sur un réseau testnet d'Ethereun en utilisant Infura.",
+                'snakeDescr': "Le célèbre jeu de snake, développé de manière autodidacte en Rust afin de me familiariser avec ce langage et en découvrir quelques unes de ses fonctionnalités.",
+                'rights': "Tous droits réservés"
+            }
+        }
+        const translator = document.querySelectorAll('.translator');
+        translator.forEach((tr) => {
+            tr.addEventListener('click', function() {
+                for (i = 0; i < translator.length; i++) {
+                    translator[i].classList.toggle('active');
+                }
+
+                var lang = tr.id; // 'en' or 'fr'
+                console.log(lang)
+                const toTranslate = document.querySelectorAll('.lang'); // selecting all elements to translate
+                toTranslate.forEach(el => {
+                    const keytext = el.getAttribute('key');
+
+                    el.textContent = arrLang[lang][keytext]
+                })
+            })
+        })
     </script>
 </body>
 
