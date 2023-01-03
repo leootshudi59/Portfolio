@@ -507,10 +507,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 10;
 }
 
-.m-8{
-  margin: 2rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -669,14 +665,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: calc(100% - 32px - 20px);
 }
 
-.w-1\/2{
-  width: 50%;
-}
-
-.w-3\/4{
-  width: 75%;
-}
-
 .w-m{
   width: 60px;
 }
@@ -801,11 +789,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(92 68 76 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
-
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -880,18 +863,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 90px;
 }
 
-.pr-10{
-  padding-right: 2.5rem;
-}
-
-.pb-8{
-  padding-bottom: 2rem;
-}
-
-.pl-12{
-  padding-left: 3rem;
-}
-
 .text-center{
   text-align: center;
 }
@@ -959,10 +930,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.375;
 }
 
-.leading-8{
-  line-height: 2rem;
-}
-
 .tracking-wide{
   letter-spacing: 0.025em;
 }
@@ -1024,7 +991,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 768px) {
   header {
     background: url('../public/media/ethereum_banner.jpeg') no-repeat center;
-    min-height: 565px;
+    min-height: 534px;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -1119,6 +1086,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:ml-8{
     margin-left: 2rem;
+  }
+
+  .md\:mb-xs{
+    margin-bottom: 15px;
+  }
+
+  .md\:mt-xs{
+    margin-top: 15px;
   }
 
   .md\:mb-m{
