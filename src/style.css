@@ -17,10 +17,22 @@
     background-color: #CB9E50;
 }
 
+.active {
+    background-color: gray;
+}
+
+.translator {
+    background-color: black;
+}
+
+.translator.active {
+    background-color: gray;
+}
+
 @media (min-width: 768px) {
     header {
         background: url('../public/media/ethereum_banner.jpeg') no-repeat center;
-        min-height: 565px;
+        min-height: 534px;
         background-size: cover;
         background-attachment: fixed;
     }
